@@ -1,0 +1,252 @@
+
+@media screen and (max-width: 900px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 0 10px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .modal-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .modal-nav.active {
+    opacity: 0.9;
+    visibility: visible;
+  }
+
+  .modal-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-item {
+    margin-bottom: 40px;
+  }
+
+  .modal-menu.active {
+    opacity: 0.9;
+    visibility: visible;
+  }
+
+  .modal-menu {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+  }
+
+  .burger {
+    width: 20px;
+    height: 16px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .burger>div {
+    transition: .3s;
+    position: absolute;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+  }
+  
+  .mid {
+    top: 50%;
+    left: 0;
+  }
+  
+  .bot {
+    top: 100%;
+    left: 0;
+  }
+  
+  .top.active {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+  .mid.active {
+    opacity: 0;
+  }
+  
+  .bot.active {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+  
+  .burger div {
+    width: 100%;
+    height: 2px;
+    background-color: #434A54;
+  }
+
+  .feature-wrap {
+    width: 50%;
+  }
+
+  .member-wrap {
+    padding: 5px;
+  }
+
+  .member {
+    padding: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  .btn {
+    padding: 5px 15px;
+  }
+
+  .burger {
+    margin-left: 8px;
+    margin-top: 5px;
+    height: 12px;
+  }
+
+  .fv-title {
+    bottom: 70vw;
+    left: 5vw;
+  }
+
+  .sub-title::before, .sub-title::after {
+    width: 27px;
+    margin-bottom: 2px;
+  }
+
+  .bgc {
+    background-attachment: local;
+  }
+
+  .fv {
+    margin-bottom: 45px;
+    background-attachment: local;
+  }
+
+  .section-wrap {
+    max-width: 90%;
+  }
+
+  .section-name {
+    font-size: 5.2rem;
+  }
+
+  .section-sub-name {
+    font-size: 2.2rem;
+  }
+
+  .section-sub-name::before, .section-sub-name::after {
+    width: 20px;
+    margin-bottom: 4px;
+
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .about-txt {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .feature-contents-wrap {
+    padding: 10px;
+    margin-top: 16px;
+  }
+
+  .feature-img {
+    width: 80%; 
+  }
+
+  .fee-copy {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .contact-btn a > button {
+    padding: 10px 40px;
+  }
+
+  .slider-content {
+    padding: 12px;
+  }
+
+  .twitter-icon {
+    left: 65%;
+  }
+
+  .works {
+    background-attachment: local;
+  }
+
+  .form {
+    margin: 26px auto;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 0;
+  }
+
+  .feature-wrap {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .fee-step-wrap {
+    flex-wrap: wrap;
+  }
+
+  .fee-step {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .twitter-icon {
+    left: 77%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .twitter-icon {
+    top: 70%;
+    left: 82%;
+  }
+}
